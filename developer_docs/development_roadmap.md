@@ -7,9 +7,9 @@ Obiettivo: Avere i 3 container (FE, BE, DB) che girano e si "vedono".
 
 - [x] Installa Docker Desktop (se non presente).
 - [x] Crea la struttura delle cartelle (`backend`, `frontend`, `docker-compose.yml`).
-- [ ] Scrivi il `Dockerfile` per il Backend (PHP + Apache).
-- [ ] Scrivi il `docker-compose.yml` includendo Postgres.
-- [ ] Crea un file `index.php` di test in `backend/src` (es. `<?php echo "Hello from PHP"; ?>`).
+- [x] Scrivi il `Dockerfile` per il Backend (PHP + Apache).
+- [x] Scrivi il `docker-compose.yml` includendo Postgres.
+- [x] Crea un file `index.php` di test in `backend/src` (es. `<?php echo "Hello from PHP"; ?>`).
 - [ ] Inizializza il progetto React nel frontend (`npm create vite@latest`).
 - [ ] Scrivi il `Dockerfile` per il Frontend.
 - [ ] Avvia tutto con `docker-compose up -d --build`.
