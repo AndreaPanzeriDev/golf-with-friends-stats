@@ -5,8 +5,8 @@ Questa roadmap è pensata per guidarti passo dopo passo nell'implementazione del
 ## Fase 1: Setup Ambiente (Infrastruttura)
 Obiettivo: Avere i 3 container (FE, BE, DB) che girano e si "vedono".
 
-- [ ] Installa Docker Desktop (se non presente).
-- [ ] Crea la struttura delle cartelle (`backend`, `frontend`, `docker-compose.yml`).
+- [x] Installa Docker Desktop (se non presente).
+- [x] Crea la struttura delle cartelle (`backend`, `frontend`, `docker-compose.yml`).
 - [ ] Scrivi il `Dockerfile` per il Backend (PHP + Apache).
 - [ ] Scrivi il `docker-compose.yml` includendo Postgres.
 - [ ] Crea un file `index.php` di test in `backend/src` (es. `<?php echo "Hello from PHP"; ?>`).
