@@ -10,7 +10,7 @@ Obiettivo: Avere i 3 container (FE, BE, DB) che girano e si "vedono".
 - [x] Scrivi il `Dockerfile` per il Backend (PHP + Apache).
 - [x] Scrivi il `docker-compose.yml` includendo Postgres.
 - [x] Crea un file `index.php` di test in `backend/src` (es. `<?php echo "Hello from PHP"; ?>`).
-- [ ] Inizializza il progetto React nel frontend (`npm create vite@latest`).
+- [x] Inizializza il progetto React nel frontend (`npm create vite@latest`).
 - [ ] Scrivi il `Dockerfile` per il Frontend.
 - [ ] Avvia tutto con `docker-compose up -d --build`.
 - [ ] Verifica accesso a:
