@@ -2,18 +2,10 @@ services:
   backend:
     build:
       context: .
-      dockerfile: docker/local/Dockerfile
+      dockerfile: backend/docker/local/Dockerfile
     ports:
       - "8080:80"
+    env_file:
+      - ./backend/.env
     volumes:
       - .:/var/www/html
-  db:
-    image: postgres:15-alpine # Versione leggera e stabile 🐘
-    container_name: mio-db-postgres
-    restart: always
-    environment:
-      POSTGRES_USER: 
-      POSTGRES_PASSWORD: 
-      POSTGRES_DB: golf
-    volumes:
-      - postgres_data:/var/lib/postgresql/data # Per non perdere i dati allo spegnimento
