@@ -1,5 +1,6 @@
 services:
   backend:
+    container_name: golf_backend
     build:
       context: .
       dockerfile: backend/docker/local/Dockerfile

@@ -20,8 +20,8 @@ Obiettivo: Avere i 3 container (FE, BE, DB) che girano e si "vedono".
 ## Fase 2: Backend Core & Database
 Obiettivo: Creare il database e le prime API funzionanti.
 
-- [ ] Collegati al container DB e crea lo schema iniziale (Tabelle `users`, `courses`).
-- [ ] Scrivi lo script PHP per la connessione al DB (`db.php`) usando PDO.
+- [x] Collegati al container DB e crea lo schema iniziale (Tabelle `users`, `courses`).
+- [x] Scrivi lo script PHP per la connessione al DB (`db.php`) usando PDO.
 - [ ] Crea l'API "Lista Amici" (`api/users.php`):
     - Deve restituire JSON.
     - Gestire Headers CORS.
