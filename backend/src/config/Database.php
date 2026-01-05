@@ -17,10 +17,9 @@ final class Database
         $db_pswd = getenv('DB_PASSWORD');
         $db_port = getenv('DB_PORT') ?? '5432';
 
-        try{
-            // $this->connection = new PDO('pgsql:host=' . $db_host .  ';port=' . $db_port . ';dbname=' . $db_name . ";", $db_user, $db_pswd);
-            $this->connection = new PDO('pgsql:host=' . $db_host .  ';port=' . $db_port . ';dbname=' . $db_name . ";", $db_user, $db_pswd);
-        }catch(PDOException $e){
+        try {
+            $this->connection = new PDO('pgsql:host=' . $db_host . ';port=' . $db_port . ';dbname=' . $db_name . ";", $db_user, $db_pswd);
+        } catch (PDOException $e) {
             echo "Connection error: " . $e;
         }
 

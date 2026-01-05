@@ -11,7 +11,6 @@ final class CreateUsersTable
 
     public function __construct()
     {
-        print_r('leclerc');
         $this->db = (new Database())->getConnection();
     }
 

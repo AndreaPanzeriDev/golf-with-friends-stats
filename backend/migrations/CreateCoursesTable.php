@@ -29,7 +29,7 @@ final class CreateCoursesTable
             $this->db->exec($sql);
             echo "courses table create successfully";
         } catch (PDOException $e) {
-            echo "error during users table creation: " . $e;
+            echo "error during courses table creation: " . $e;
         }
     }
 
@@ -38,9 +38,9 @@ final class CreateCoursesTable
         $sql = "DROP TABLE courses;";
         try {
             $this->db->exec($sql);
-            echo "users table create successfully";
+            echo "courses table dropped successfully";
         } catch (PDOException $e) {
-            echo "error during users table creation: " . $e;
+            echo "error during courses table drop: " . $e;
         }
     }
 }

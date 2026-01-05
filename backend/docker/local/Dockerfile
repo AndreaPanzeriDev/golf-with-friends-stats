@@ -1,4 +1,4 @@
-FROM php:8.1.34-apache-trixie
+FROM php:8.2-apache
 
 # 1. Installiamo i driver per Postgres e dipendenze per Composer
 RUN apt-get update && apt-get install -y libpq-dev git zip unzip \
