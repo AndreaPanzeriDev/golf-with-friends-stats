@@ -36,7 +36,7 @@ Follow these instructions to set up the project locally.
 
 1.  **Clone the repository**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/AndreaPanzeriDev/golf-with-friends-stats.git
     cd golf-with-friends-stats
     ```
 
