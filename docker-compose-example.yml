@@ -2,11 +2,11 @@ services:
   backend:
     container_name: golf_backend
     build:
-      context: .
-      dockerfile: backend/docker/local/Dockerfile
+      context: ./backend
+      dockerfile: docker/local/Dockerfile
     ports:
       - "8080:80"
     env_file:
       - ./backend/.env
     volumes:
-      - .:/var/www/html
+      - ./backend:/var/www/html

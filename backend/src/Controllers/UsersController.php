@@ -2,27 +2,32 @@
 
 namespace App\Src\Controllers;
 
-use App\Src\Config\Database;
+use App\Config\Database;
 use PDOException;
 
 class UsersController {
 
-    private string $method;
     private $db;
 
-
-    public function __construct(string $method)
+    public function __construct()
     {
-        $this->method = $method;
-        $this->db = (new Database)->getConnection();
+        $this->db = new Database();
     }
 
-
     public function all(){
+        
         $sql = "SELECT * FROM users;";
         try{
-            $results = $this->db->exec($sql);
-            echo json_encode($results);
+           echo $this->db->get($sql);      
+        }catch(PDOException $e){
+            echo json_encode(['message' => 'Error while retriving users', 'error' => $e]);
+        }
+    }
+
+    public function find($id){
+        $sql = 'SELECT * FROM users WHERE id = "' .$id .  '";';
+        try{
+           echo $this->db->get($sql);      
         }catch(PDOException $e){
             echo json_encode(['message' => 'Error while retriving users', 'error' => $e]);
         }
