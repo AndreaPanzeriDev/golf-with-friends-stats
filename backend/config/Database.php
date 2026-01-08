@@ -8,7 +8,7 @@ use PDOException;
 final class Database
 {
 
-    protected $connection;
+    public $connection;
 
     public function __construct()
     {
@@ -22,15 +22,5 @@ final class Database
         } catch (PDOException $e) {
             echo "Connection error: " . $e;
         }
-    }
-
-    public function get($sql)
-    {
-        try {
-            $statement = $this->connection->query($sql);
-        } catch (PDOException $e) {
-            return json_encode(['message' => 'SQL error', 'error' => $e]);
-        }
-        return json_encode($statement->fetchall(PDO::FETCH_ASSOC));
     }
 }
