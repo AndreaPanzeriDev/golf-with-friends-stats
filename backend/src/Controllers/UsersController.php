@@ -7,7 +7,6 @@ use PDO;
 use PDOException;
 
 
-header('Content-Type: application/json');
 class UsersController
 {
     private $db;

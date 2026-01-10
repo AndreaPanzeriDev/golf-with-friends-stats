@@ -25,8 +25,8 @@ Obiettivo: Creare il database e le prime API funzionanti.
 - [ ] Crea l'API "Lista Amici" (`api/users.php`):
     - Deve restituire JSON.
     - Gestire Headers CORS.
-- [ ] Crea l'API "Aggiungi Amico" (POST request).
-- [ ] Testa le API con Postman o cURL.
+- [x] Crea l'API "Aggiungi Amico" (POST request).
+- [x] Testa le API con Postman o cURL.
 
 ## Fase 3: Frontend Base & Integrazione
 Obiettivo: Visualizzare i dati del backend in React.
