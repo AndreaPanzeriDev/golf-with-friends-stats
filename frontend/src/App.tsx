@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from 'antd'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,14 +18,15 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Button type='primary'>Bottone prova ant design</Button>
       <div className="p-4 mb-4 bg-green-100 text-green-700 rounded-lg shadow-md border border-green-200">
         <h2 className="text-xl font-bold mb-2">Tailwind Verification</h2>
         <p>If you see this green box with styled text, Tailwind CSS is working correctly!</p>
       </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p className='font-bold'>
           Edit <code>src/App.tsx</code> and save to test HMR <i>fuck you Tony</i>
         </p>
