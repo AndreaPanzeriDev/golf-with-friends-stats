@@ -31,7 +31,7 @@ Obiettivo: Creare il database e le prime API funzionanti.
 ## Fase 3: Frontend Base & Integrazione
 Obiettivo: Visualizzare i dati del backend in React.
 
-- [ ] Installa Tailwind CSS e Ant Design nel frontend.
+- [x] Installa Tailwind CSS e Ant Design nel frontend.
 - [ ] Installa e configura **react-i18n** per il supporto multilingua.
 - [ ] Configura il layout base (Navbar, Sidebar).
 - [ ] Crea la pagina "Amici".
