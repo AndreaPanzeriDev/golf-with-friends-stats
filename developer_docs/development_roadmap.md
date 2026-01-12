@@ -32,7 +32,7 @@ Obiettivo: Creare il database e le prime API funzionanti.
 Obiettivo: Visualizzare i dati del backend in React.
 
 - [x] Installa Tailwind CSS e Ant Design nel frontend.
-- [ ] Installa e configura **react-i18n** per il supporto multilingua.
+- [x] Installa e configura **react-i18n** per il supporto multilingua.
 - [ ] Configura il layout base (Navbar, Sidebar).
 - [ ] Crea la pagina "Amici".
 - [ ] Implementa la chiamata `fetch` all'API `http://localhost:8000/api/users.php`.
