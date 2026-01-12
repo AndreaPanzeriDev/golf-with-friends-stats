@@ -3,10 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Button } from 'antd'
+import { useTranslation } from 'react-i18next'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const {t} = useTranslation('common');
   return (
     <>
       <div>
@@ -17,8 +18,11 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
+      <p>
+      {t('welcome')}
+      </p>
       <h1>Vite + React</h1>
-      <Button type='primary'>Bottone prova ant design</Button>
       <div className="p-4 mb-4 bg-green-100 text-green-700 rounded-lg shadow-md border border-green-200">
         <h2 className="text-xl font-bold mb-2">Tailwind Verification</h2>
         <p>If you see this green box with styled text, Tailwind CSS is working correctly!</p>
