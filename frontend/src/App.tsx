@@ -1,45 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from 'antd'
-import { useTranslation } from 'react-i18next'
+import { useState } from 'react';
+import { MainLayout } from './component/layout/MainLayout';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-  const {t} = useTranslation('common');
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+  const [currentView, setCurrentView] = useState('dashboard');
 
-      <p>
-      {t('welcome')}
-      </p>
-      <h1>Vite + React</h1>
-      <div className="p-4 mb-4 bg-green-100 text-green-700 rounded-lg shadow-md border border-green-200">
-        <h2 className="text-xl font-bold mb-2">Tailwind Verification</h2>
-        <p>If you see this green box with styled text, Tailwind CSS is working correctly!</p>
-      </div>
-      <div className="card">
-        <Button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </Button>
-        <p className='font-bold'>
-          Edit <code>src/App.tsx</code> and save to test HMR <i>fuck you Tony</i>
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  const renderContent = () => {
+    switch (currentView) {
+      case 'dashboard':
+        return (
+          <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 className="mb-2 text-lg font-medium text-slate-800">Welcome Back!</h3>
+            <p className="text-slate-500">Here is your golf performance overview.</p>
+          </div>
+        );
+      case 'friends':
+        return <div className="text-center p-10">Friends List Component Placeholder</div>;
+      case 'games':
+        return <div className="text-center p-10">Recent Games Component Placeholder</div>;
+      default:
+        return <div>Page Not Found</div>;
+    }
+  };
+
+  return (
+    <MainLayout currentView={currentView} onNavigate={setCurrentView}>
+      {renderContent()}
+    </MainLayout>
+  );
 }
 
-export default App
+export default App;
