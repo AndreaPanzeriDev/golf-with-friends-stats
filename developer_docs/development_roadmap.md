@@ -33,7 +33,7 @@ Obiettivo: Visualizzare i dati del backend in React.
 
 - [x] Installa Tailwind CSS e Ant Design nel frontend.
 - [x] Installa e configura **react-i18n** per il supporto multilingua.
-- [ ] Configura il layout base (Navbar, Sidebar).
+- [x] Configura il layout base (Navbar, Sidebar).
 - [ ] Crea la pagina "Amici".
 - [ ] Implementa la chiamata `fetch` all'API `http://localhost:8000/api/users.php`.
 - [ ] Mostra la lista degli amici in una tabella Ant Design.
