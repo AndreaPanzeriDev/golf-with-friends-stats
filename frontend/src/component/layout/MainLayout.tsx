@@ -1,25 +1,21 @@
-import { Layout } from "antd";
-import { Content, Footer, Header } from "antd/es/layout/layout";
-import Sider from "antd/es/layout/Sider";
+
+import Sidebar from "./Sidebar";
 
 interface PageProps {
     currentPage: string,
     action: (setCurrentPage: string) => void;
 }
 
-function MainLayout({currentPage, action: setCurrentPage}: PageProps){
-    
+function MainLayout({ currentPage, action: setCurrentPage }: PageProps) {
+
     return (
-        <Layout style={{height: "100%"}}>
-            <Sider width="20%">{currentPage}</Sider>
-            <Layout>
-                <Header>header</Header>
-                <Content>content</Content>
-                <Footer>footer</Footer>
-            </Layout>
-        </Layout>
+        <div>
+            <Sidebar currentPage={currentPage} action={setCurrentPage} />
+
+        
+        </div>
     )
-    
+
 }
 
 export default MainLayout;
