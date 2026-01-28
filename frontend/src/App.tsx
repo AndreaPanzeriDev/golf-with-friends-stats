@@ -19,9 +19,8 @@ function App() {
 
 
   return (
-    <MainLayout currentPage={currentPage} action={setCurrentPage}>
-    </MainLayout>
-  );
+    <MainLayout currentPage={currentPage} action={setCurrentPage}/>
+  )
 }
 
 export default App;
