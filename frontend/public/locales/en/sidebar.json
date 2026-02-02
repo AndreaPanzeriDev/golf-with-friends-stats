@@ -1,4 +1,13 @@
 {
     "golf-stats": "GolfStats",
-    "with-friends": "with friends"
+    "with-friends": "with friends",
+
+    "dashboard" : "Dashboard",
+    "friends": "Friends",
+    "courses": "Courses",
+    "games": "Games",
+    "calendar": "Calendar",
+    "settings": "Settings"
+
+
 }
