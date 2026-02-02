@@ -1,18 +1,29 @@
 
+import { useState } from "react";
 import Sidebar from "./Sidebar";
+import Friends from "../../pages/Friends";
+import Dashboard from "../../pages/Dashboard";
 
-interface PageProps {
-    currentPage: string,
-    action: (setCurrentPage: string) => void;
-}
 
-function MainLayout({ currentPage, action: setCurrentPage }: PageProps) {
+
+function MainLayout() {
+    const [currentPage, setCurrentPage] = useState<string>('dashboard');
+    let render;
+
+    switch(currentPage){
+        case "friends":
+            render =  <Friends />
+            break;
+        default:
+            render = <Dashboard />
+    }
 
     return (
-        <div>
+        <div className="flex!">
             <Sidebar currentPage={currentPage} action={setCurrentPage} />
-
-        
+            <div className="flex-1">
+                {render}
+            </div>
         </div>
     )
 
