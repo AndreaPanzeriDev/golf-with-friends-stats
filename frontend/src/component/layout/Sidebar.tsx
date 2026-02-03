@@ -20,7 +20,7 @@ function Sidebar({ currentPage, action: setCurrentPage }: PageProps) {
      * end style
      */
     return (
-        <div className="h-screen flex! flex-col! w-68 border-r border-gray-200">
+        <div className="h-screen flex! flex-col! w-68 border-r  border-gray-400">
             <div className="flex items-center justify-center py-3">
                 <div className="bg-[#2c6141] rounded-full h-11 w-11 justify-center flex items-center mr-3"><span className="text-2xl">⛳</span></div>
                 <div>
@@ -35,8 +35,8 @@ function Sidebar({ currentPage, action: setCurrentPage }: PageProps) {
 
             </div>
             <hr className="border-t border-gray-200" />
-            <div className="flex! flex-col! items-center justify-between! flex-auto!">
-                <div className="flex! flex-col!">
+            <div className="flex flex-col items-center justify-between flex-auto!">
+                <div className="flex! flex-col">
                     <Button onClick={() => setCurrentPage("dashboard")} className={`${baseButtonStyle} ${currentPage == "dashboard" ? activeButton : hoverButton} `}><LayoutDashboard />{t("dashboard")}</Button>
                     <Button onClick={() => setCurrentPage("friends")} className={`${baseButtonStyle} ${currentPage == "friends" ? activeButton :hoverButton}`}><UserRound />{t("friends")}</Button>
                     <Button onClick={() => setCurrentPage("courses")} className={`${baseButtonStyle} ${currentPage == "courses" ? activeButton :hoverButton}`}><MapPinned />{t("courses")}</Button>
