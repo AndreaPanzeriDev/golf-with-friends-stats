@@ -2,7 +2,7 @@
 
 namespace App\Migrations;
 
-use App\Src\Config\Database;
+use App\Config\Database;
 use PDOException;
 
 final class CreateCoursesTable
