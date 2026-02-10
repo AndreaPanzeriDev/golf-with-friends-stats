@@ -10,3 +10,9 @@ services:
       - ./backend/.env
     volumes:
       - ./backend:/var/www/html
+    networks:
+      - global_proxy
+
+networks:
+  global_proxy:
+    external: true

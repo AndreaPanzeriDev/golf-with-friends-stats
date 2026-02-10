@@ -4,9 +4,10 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "App\\": "./",
+            "App\\Config\\": "./config/",
             "App\\Migrations\\": "./migrations/"
         }
+        
     },
     "authors": [
         {
