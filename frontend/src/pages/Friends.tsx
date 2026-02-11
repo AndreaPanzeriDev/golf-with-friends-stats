@@ -2,7 +2,7 @@ import { Button } from "antd";
 import NavBar from "../component/layout/NavBar";
 import { useTranslation } from "react-i18next";
 import { Plus } from "lucide-react";
-import FriendsList from "../component/FriendsList";
+import FriendsList from "../component/layout/Friends/FriendsList";
 
 function Friends() {
 

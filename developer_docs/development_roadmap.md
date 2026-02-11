@@ -36,7 +36,7 @@ Obiettivo: Visualizzare i dati del backend in React.
 - [x] Configura il layout base (Navbar, Sidebar).
 - [x] Crea la pagina "Amici".
 - [x] Implementa la chiamata `fetch` all'API `http://localhost:8000/api/users.php`.
-- [ ] Mostra la lista degli amici in una tabella Ant Design.
+- [x] Mostra la lista degli amici in una tabella Ant Design.
 - [ ] Aggiungi un form/modale per creare un nuovo amico (chiamata POST).
 
 ## Fase 4: Funzionalità Avanzate

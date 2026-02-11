@@ -1,4 +1,4 @@
-import { Button, Flex, Typography } from "antd";
+import { Button, Typography } from "antd";
 import { Bolt, Calendar, LayoutDashboard, MapPinned, UserRound } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
