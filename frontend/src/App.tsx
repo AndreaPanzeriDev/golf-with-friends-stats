@@ -1,11 +1,14 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MainLayout from "./component/layout/MainLayout";
 
-
 function App() {
+  const queryClient = new QueryClient();
 
   return (
-    <MainLayout />
-  )
+    <QueryClientProvider client={queryClient}>
+      <MainLayout />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

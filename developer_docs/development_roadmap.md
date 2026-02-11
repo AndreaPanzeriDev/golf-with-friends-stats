@@ -22,7 +22,7 @@ Obiettivo: Creare il database e le prime API funzionanti.
 
 - [x] Collegati al container DB e crea lo schema iniziale (Tabelle `users`, `courses`).
 - [x] Scrivi lo script PHP per la connessione al DB (`db.php`) usando PDO.
-- [ ] Crea l'API "Lista Amici" (`api/users.php`):
+- [x] Crea l'API "Lista Amici" (`api/users.php`):
     - Deve restituire JSON.
     - Gestire Headers CORS.
 - [x] Crea l'API "Aggiungi Amico" (POST request).
@@ -35,7 +35,7 @@ Obiettivo: Visualizzare i dati del backend in React.
 - [x] Installa e configura **react-i18n** per il supporto multilingua.
 - [x] Configura il layout base (Navbar, Sidebar).
 - [x] Crea la pagina "Amici".
-- [ ] Implementa la chiamata `fetch` all'API `http://localhost:8000/api/users.php`.
+- [x] Implementa la chiamata `fetch` all'API `http://localhost:8000/api/users.php`.
 - [ ] Mostra la lista degli amici in una tabella Ant Design.
 - [ ] Aggiungi un form/modale per creare un nuovo amico (chiamata POST).
 
