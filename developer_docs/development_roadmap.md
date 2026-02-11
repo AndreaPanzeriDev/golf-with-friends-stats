@@ -39,6 +39,12 @@ Obiettivo: Visualizzare i dati del backend in React.
 - [x] Mostra la lista degli amici in una tabella Ant Design.
 - [ ] Aggiungi un form/modale per creare un nuovo amico (chiamata POST).
 
+
+## Fase 3.5: Laravel
+Obiettivo: Convertire il backend in laravel
+
+- [ ] Installa Laravel e riporta i crud
+
 ## Fase 4: Funzionalità Avanzate
 Obiettivo: Completare le feature di business.
 
