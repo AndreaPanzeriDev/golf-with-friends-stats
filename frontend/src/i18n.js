@@ -14,7 +14,7 @@ i18n
       escapeValue: false, // React already protects from XSS
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json', // Path to your files
+      loadPath: 'locales/{{lng}}/{{ns}}.json', // Path to your files
     }
   });
 

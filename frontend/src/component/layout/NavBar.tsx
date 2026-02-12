@@ -10,10 +10,10 @@ interface PageProps {
 function NavBar({ navbarName, additionalComponent }: PageProps) {
 
     return <>
-        <Flex className="justify-between p-5!">
+        <Flex className="justify-between p-5! bg-[#f6f8f6]">
             <span className="font-serif text-2xl sm:text-3xl font-semibold text-foreground truncate">{navbarName}</span>
             <div className="flex justify-between">
-                {/* ! Da rifare */}
+                {/*!da rifare */}
                 <Button>Lingua</Button>
                 <div>
                     {additionalComponent}

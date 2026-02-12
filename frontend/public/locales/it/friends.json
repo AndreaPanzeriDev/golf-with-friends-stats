@@ -1,0 +1,19 @@
+{
+    "modal": {
+        "addFriend": "Aggiungi Amico",
+        "description": "Aggiungi un nuovo amico per tracciare le vostre partite insieme.",
+        "form": {
+            "name": {
+                "label": "Nome",
+                "placeholder": "Inserisci il nome",
+                "required": "Inserire nome completo"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Inserisci l'email",
+                "required": "Inserire un'email",
+                "invalid": "L'email inserita non e' valida"
+            }
+        }
+    }
+}

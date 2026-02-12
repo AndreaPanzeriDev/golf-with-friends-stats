@@ -18,5 +18,28 @@
         "titleBar.inactiveBackground": "#21573299",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#215732"
+    "peacock.color": "#215732",
+    "editor.formatOnSave": true,
+    
+    // Language-specific formatter associations
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[php]": {
+    "editor.defaultFormatter": "open-southensk.laravel-pint"
+    },
+    // Prettier configuration
+    "prettier.documentSelectors": ["**/*.ts", "**/*.tsx"],
+    "prettier.requireConfig": true,
+    
+    // Laravel Pint configuration
+    "laravel-pint.enable": true,
+    "laravel-pint.mode": "fix",
+    "laravel-pint.onSave": true
 }
+

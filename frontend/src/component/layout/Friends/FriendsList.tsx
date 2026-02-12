@@ -16,7 +16,6 @@ function FriendsList() {
     queryKey: ["users"],
     queryFn: () =>
       fetch(import.meta.env.VITE_BASE_URL + "api/users").then((res) => {
-        console.log(res);
         return res.json();
       }),
   });
@@ -30,12 +29,19 @@ function FriendsList() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-5">
+    <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-5 p-5">
       {data?.map((user) => {
         return (
           <Card
             key={user.id}
-            title={<div><Avatar className="bg-[#20553b]!">{user.name.substring(0,2).toUpperCase()}</Avatar></div>}
+            title={
+              <>
+                <Avatar className="bg-[#20553b]! mr-4!">
+                  {user.name.substring(0, 2).toUpperCase()}
+                </Avatar>
+                {user.name}
+              </>
+            }
             extra={
               <Button
                 className="border-none!"

@@ -11,16 +11,16 @@ function Sidebar({ currentPage, action: setCurrentPage }: PageProps) {
     const { t } = useTranslation('sidebar');
 
     /**
-     * start style
+     * start button's style
      */
     const baseButtonStyle = "flex! items-center! justify-start! h-12 w-56 border-none! shadow-none! text-gray-500 text-lg p-5! rounded-xl transition-all my-1.5!"
     const activeButton = "bg-[#20553b]! text-white!"
     const hoverButton = "hover:bg-[#E6EDE9]! hover:text-[#2C4A39]!"
     /**
-     * end style
+     * end button's style
      */
     return (
-        <div className="h-screen flex! flex-col! w-68 border-r  border-gray-400">
+        <div className="h-screen flex! flex-col! w-68 border-r  border-gray-200">
             <div className="flex items-center justify-center py-3">
                 <div className="bg-[#2c6141] rounded-full h-11 w-11 justify-center flex items-center mr-3"><span className="text-2xl">⛳</span></div>
                 <div>

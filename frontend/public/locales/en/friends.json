@@ -1,0 +1,19 @@
+{
+    "modal": {
+        "addFriend": "Add Friend",
+        "description": "Add a new friend to track your games together.",
+        "form": {
+            "name": {
+                "label": "Name",
+                "placeholder": "Enter the name",
+                "required": "Enter full name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter the email",
+                "required": "Enter an email",
+                "invalid": "The email entered is not valid"
+            }
+        }
+    }
+}
