@@ -66,7 +66,7 @@ function Friends() {
           </Button>
         }
       />
-      <div className={`w-full flex-1 bg-[#f6f8f6]`}>
+      <div className={`w-full flex-1 bg-[#f6f8f6] overflow-y-auto`}>
         <FriendsList />
       </div>
     </div>
