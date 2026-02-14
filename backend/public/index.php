@@ -5,7 +5,9 @@ use App\Src\Controllers\UsersController;
 require_once __DIR__ . "/../vendor/autoload.php";
 
 header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];

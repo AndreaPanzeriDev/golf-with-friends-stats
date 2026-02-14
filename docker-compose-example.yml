@@ -8,5 +8,12 @@ services:
       - "8080:80"
     env_file:
       - ./backend/.env
+    restart: always
     volumes:
       - ./backend:/var/www/html
+    networks:
+      - global_proxy
+
+networks:
+  global_proxy:
+    external: true
