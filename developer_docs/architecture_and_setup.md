@@ -15,7 +15,7 @@ Utilizziamo `docker-compose` per gestire i servizi che comunicano tra loro in un
     - Utilizza Eloquent ORM per comunicare con il database.
 2.  **`db` (PostgreSQL)**: Il database.
     - Configurato in Laravel tramite `.env`.
-    - Accessibile tramite host `host.docker.internal` dal container.
+    - Accessibile tramite host definito in `DB_HOST`.
 3.  **`frontend` (React + Vite)**:
     - Utilizza un'immagine Node.
     - Durante lo sviluppo, il container fa girare `npm run dev`.
@@ -109,14 +109,14 @@ Il file `laravel/.env` contiene la configurazione del database:
 
 ```env
 DB_CONNECTION=pgsql
-DB_HOST=host.docker.internal
+DB_HOST=postgres_db
 DB_PORT=5432
 DB_DATABASE=golf
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-**Nota**: `host.docker.internal` permette al container di raggiungere PostgreSQL in esecuzione sull'host.
+**Nota**: Assicurati che il servizio PostgreSQL sia raggiungibile con il nome specificato in `DB_HOST`. Su Linux, se PostgreSQL è in esecuzione sull'host, potrebbe essere necessario usare l'IP dell'host o configurare `extra_hosts` in Docker.
 
 ### Avvio dei Container
 
