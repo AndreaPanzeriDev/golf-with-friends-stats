@@ -3,7 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
 class UserRequest extends FormRequest
 {
     /**
@@ -23,8 +22,7 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => 'required|string',
-            'email' => 'required|email|unique',
-            'password' => 'required|string'
+            'email' => 'required|email|unique:users'
         ];
     }
 }
