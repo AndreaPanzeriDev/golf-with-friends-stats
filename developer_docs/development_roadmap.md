@@ -43,7 +43,7 @@ Obiettivo: Visualizzare i dati del backend in React.
 ## Fase 3.5: Laravel
 Obiettivo: Convertire il backend in laravel
 
-- [ ] Installa Laravel e riporta i crud
+- [x] Installa Laravel e riporta i crud
 
 ## Fase 4: Funzionalità Avanzate
 Obiettivo: Completare le feature di business.
