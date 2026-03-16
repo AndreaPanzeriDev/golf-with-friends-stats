@@ -7,5 +7,5 @@ Route::prefix('users')->group(function () {
     Route::get('/', [UserController::class, 'index']);
     Route::get('/{id}', [UserController::class, 'show']); 
     Route::post('/', [UserController::class, 'store']);
-    Route::delete('/', [UserController::class, 'destroy']);
+    Route::delete('/{id}', [UserController::class, 'destroy']);
 });
