@@ -33,5 +33,10 @@ COPY . .
 # 8. Install PHP dependencies
 RUN composer install --no-interaction --optimize-autoloader
 
-# 9. Set permissions for Apache
-RUN chown -R www-data:www-data /var/www/html
+ARG HOST_UID=1000
+ARG HOST_GID=1000
+
+# 9. Set permissions for Apache and match host user UID/GID for file sharing
+RUN groupmod -o -g ${HOST_GID} www-data && \
+    usermod -o -u ${HOST_UID} www-data
+USER www-data
