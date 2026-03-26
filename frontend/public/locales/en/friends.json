@@ -1,7 +1,9 @@
 {
     "modal": {
         "addFriend": "Add Friend",
+        "updateFriend": "Update Friend Info",
         "description": "Add a new friend to track your games together.",
+        "description_update": "Edit your friends info",
         "form": {
             "name": {
                 "label": "Name",

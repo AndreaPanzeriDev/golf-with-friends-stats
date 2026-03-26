@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -16,7 +15,7 @@ class UserController extends Controller
         return User::all();
     }
 
-   
+
     /**
      * Store a newly created resource in storage.
      */
@@ -34,19 +33,11 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        return $user->update($request->all());
     }
 
     /**
@@ -54,6 +45,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-       return User::find($id)->delete();
+        return User::find($id)->delete();
     }
 }

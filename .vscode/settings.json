@@ -27,11 +27,11 @@
         "editor.formatOnSave": true
     },
     "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.formatOnSave": true
     },
     "[php]": {
-    "editor.defaultFormatter": "open-southensk.laravel-pint"
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
     // Prettier configuration
     "prettier.documentSelectors": ["**/*.ts", "**/*.tsx"],
