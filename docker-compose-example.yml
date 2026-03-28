@@ -2,15 +2,16 @@ services:
   backend:
     container_name: golf_backend
     build:
-      context: ./backend
+      context: ./laravel
       dockerfile: docker/local/Dockerfile
     ports:
       - "8080:80"
     env_file:
-      - ./backend/.env
+      - ./laravel/.env
     restart: always
+    user: "${UID}:${GID}"
     volumes:
-      - ./backend:/var/www/html
+      - ./laravel:/var/www/html
     networks:
       - global_proxy
 
